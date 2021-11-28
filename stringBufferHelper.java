@@ -3,7 +3,7 @@ class StringBufferHelper
     //@author: Apurv rana last updated 9:02 03/12/2018 monday 
     
 //utility method to remove duplicates from string buffer
-    public StringBuffer removeDuplicate(String s3) 
+    public static  StringBuffer removeDuplicate(String s3)
     {
         StringBuffer s =new StringBuffer(s3);
 StringBuffer s1 =new StringBuffer();
@@ -32,5 +32,11 @@ for(int i=1;i<s.length();i++)
     
 }
 return s1;
+    }
+
+    public static void main(String[] args)
+    {
+        System.out.println(removeDuplicate("hello hello my name is apurv"));
+
     }
 }
